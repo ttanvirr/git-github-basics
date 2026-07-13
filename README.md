@@ -480,7 +480,8 @@ In Git, you can customize the default branch name used when initializing a new r
 - run `git stash pop` to get the saved uncommited changes back.
 - again stash the uncommited changes.
 - modify content of main-04.txt. stash this changes. now we have two stashes. run `git stash list` to see them.
-- run `git stash pop <stash_id>` to get one saved stash back.
+- run `git stash pop <stash_id>` to get one saved stash back. next get the othe stashed changes back.
+- finally commit all changes.
 
 ## HEAD and Detached HEAD
 
