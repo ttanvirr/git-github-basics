@@ -487,6 +487,8 @@ In Git, you can customize the default branch name used when initializing a new r
 
 - create a new branch 'feature'
 - create 'feature/feature-01.txt' in the previous project directory. commit changes.
+- add/modify content of 'feature-01.txt'.
+- suppose, now we want to look at our `main` branch but don't want to commit the last changes in the `feature` branch. try to switch to `main` branch.
 
 ## HEAD and Detached HEAD
 
