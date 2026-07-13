@@ -473,7 +473,7 @@ In Git, you can customize the default branch name used when initializing a new r
 
 - create a new folder named "git-stash"
 - create a file name "main-01.txt" and add some content. commit changes to main branch.
--
+- create "main-02.txt" and "main-03.txt". Don't commit. Try to stash them. You can't stash them as they are still untracked and still no modification made.
 
 ## HEAD and Detached HEAD
 
