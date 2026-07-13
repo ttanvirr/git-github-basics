@@ -386,7 +386,7 @@ Repeat the steps above but with rebasing instead of merging.
 - initialize Git repository: `git init`
 - rest of the steps are the same as above
 - compare VSCode GUI for `git-branches` and `git-rebase`
-- notice that the commit history is different
+- notice that the commit history (hashes) is different
 
 While working on personal projects, the choice is entirely up to you; however, for work projects, team standards are typically followed. For example, in my case, we are required to use rebase, so it's important to understand both merging and rebasing.
 
