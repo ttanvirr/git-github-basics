@@ -490,6 +490,7 @@ In Git, you can customize the default branch name used when initializing a new r
 - add/modify content of 'feature-01.txt'.
 - suppose, now we want to look at our `main` branch but don't want to commit the last changes in the `feature` branch. try to switch to `main` branch. notice that you can't switch normally and you are asked to stash or commit changes. In this situation it is very helpful to stash the changes. So, run `git stash`. now you can switch to other branch.
 - finally come back to the feature branch. run `git stash pop` to get back the changes and commit changes.
+- merge feature with main.
 
 ## HEAD and Detached HEAD
 
