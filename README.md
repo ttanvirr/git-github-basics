@@ -476,6 +476,8 @@ In Git, you can customize the default branch name used when initializing a new r
 - create "main-02.txt" and "main-03.txt". Don't commit. Try to stash them. You can't stash them as they are still untracked and still no modification made.
 - commit the changes.
 - now modify content of main-02.txt and main-03.txt. don't commit these modified changes. stash the changes instead.
+- create main-04.txt and commit.
+- run `git stash pop` to get the saved uncommited changes back.
 
 ## HEAD and Detached HEAD
 
