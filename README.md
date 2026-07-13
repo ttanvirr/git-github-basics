@@ -483,6 +483,11 @@ In Git, you can customize the default branch name used when initializing a new r
 - run `git stash pop <stash_id>` to get one saved stash back. next get the othe stashed changes back.
 - finally commit all changes.
 
+**Practical example of stash**
+
+- create a new branch 'feature'
+- create 'feature/feature-01.txt' in the previous project directory. commit changes.
+
 ## HEAD and Detached HEAD
 
 **HEAD**
