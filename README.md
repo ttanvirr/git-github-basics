@@ -398,7 +398,7 @@ Repeat the steps above using the VSCode GUI. You can use the Source Control pane
 
 ## 🧠 Git Challenge: Branching & Merging
 
-- Create a new folder called `my-branch-project`
+- Create a new folder called `branches-vscode`
 - Open the folder in VSCode
 - Open the terminal in VSCode (`View > Terminal` or `Ctrl + ``)
 - Initialize a Git repository
