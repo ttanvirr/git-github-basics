@@ -472,8 +472,8 @@ In Git, you can customize the default branch name used when initializing a new r
 **Practice Exercise**
 
 - create a new folder named "git-stash"
-
-TODO:
+- create a file name "main-01.txt" and add some content. commit changes to main branch.
+-
 
 ## HEAD and Detached HEAD
 
