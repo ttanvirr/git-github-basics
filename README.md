@@ -432,9 +432,7 @@ The local config file is located in the `.git/config` directory of your reposito
 You can view the local config file by running `git config --local --list` or by opening the `.git/config` file in a text editor.
 It works the same for the global
 
-`git config --local --add user.name "shakeAndBake"`
-
-- `git config --local --add user.name "Your Name"` - Adds a new user.name setting to the local repository configuration, allowing multiple values for the same setting.
+- `git config --local --add user.name "Your Name"` - Adds a new user.name setting to the local repository configuration, allowing multiple values for the same setting. Remove the `--add` flag to overrider previous value.
 
 - `git config --local --unset user.name` - Removes the user.name setting from the local repository configuration.
 
