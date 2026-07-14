@@ -748,6 +748,8 @@ console.log("hello from bugfix-1")
 - now switch to main and merge with feature. this time merge will be done with 'Fast-forward' and no conflicts.
 
 - now switch to bugfix branch.
+- this time instead of merging, run `git rebase main`.
+- the difference is that now we have to accept incoming changes instead of current. the next steps are similar.
 
 ## 🔄 Git Rebase vs Git Merge (Behind the Scenes)
 
