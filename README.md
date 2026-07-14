@@ -534,6 +534,31 @@ The key differences between `git reflog` and `git log` are:
 
 Think of `git log` as your official commit history, while `git reflog` is like a detailed activity log that records every movement of HEAD, making it particularly useful for recovering lost commits or branches after operations like hard resets or branch deletions.
 
+#### practice HEAD
+
+- create a project folder 'head-reflog'
+- create main-01.txt. put content and commit changes.
+- run `git log --oneline` to see the `HEAD` position. It is pointing to the main branch's latest commit.
+- repeat step for 'main-02.txt'.
+- create and switch to a new branch 'feature'.
+- create feature/feature-01.txt. put content and commit changes.
+- repeat step for feature-02.txt.
+- run `git log --oneline` to see the `HEAD` position. It is now pointing to the `feature` branch's latest commit.
+- switch to the main branch and repeat steps for 'main-03.txt'.
+- switch to feature branch and merge `feature` with `main`.
+- check the HEAD position (pointing to feature branch with the merge-commit).
+- switch to main branch and merge `main` with `feature`.
+- again check the HEAD position. now the HEAD should be pointing to both main and feature branch on the latest commit.
+
+#### practice detached HEAD
+
+- continue with the previous project.
+- checkout to an old commit (run `git checkout <commit_hash>`). now we are in detached HEAD mode. now if we change anything to the project it won't be associated with any branch.
+- Solution: instead of running `git checkout <commit_hash>`, run `git checkout -b <branch_name> <commit_hash>`. This will not only move to the specific commit, associate new changes (if any) to that new branch (not detached).
+- for example, checkout to an old commit with a new branch named 'bugfix'.
+- create 'bugfix/bugfix-01.txt' and commit changes. this will associated with branch 'bugfix'.
+- finally merge main and bugfix branches.
+
 ## Git Reset
 
 Git reset is a powerful command that allows you to undo changes in your Git repository. It can be used to unstage files, discard changes, or even remove commits from your history.We will only cover the most common use cases of `git reset` here, since I don't want to overwhelm you with too much information at once. The most common use cases are:
