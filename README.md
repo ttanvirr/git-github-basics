@@ -555,6 +555,9 @@ Think of `git log` as your official commit history, while `git reflog` is like a
 - continue with the previous project.
 - checkout to an old commit (run `git checkout <commit_hash>`). now we are in detached HEAD mode. now if we change anything to the project it won't be associated with any branch.
 - Solution: instead of running `git checkout <commit_hash>`, run `git checkout -b <branch_name> <commit_hash>`. This will not only move to the specific commit, associate new changes (if any) to that new branch (not detached).
+- for example, checkout to an old commit with a new branch named 'bugfix'.
+- create 'bugfix/bugfix-01.txt' and commit changes. this will associated with branch 'bugfix'.
+- finally merge main and bugfix branches.
 
 ## Git Reset
 
