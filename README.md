@@ -598,6 +598,16 @@ The `git reset --hard HEAD~1` command is a powerful and potentially dangerous co
 
 If you use `HEAD~2` instead of `HEAD~1`, Git will move back two commits and permanently remove both the last commit and the one before it, along with all their changes. This means all changes from the last two commits will be permanently lost. Use this command with extreme caution, as there's no way to recover the changes once they're discarded. It's recommended to create a backup branch or stash your changes before using a hard reset if you're unsure about the consequences.
 
+#### practice reset
+
+- crate a project folder 'reset'
+- create 'main-01.txt'. commit changes. repeat steps for 'main-02.txt' and 'main-03.txt'.
+- run `git log --oneline` to see the commit hashes.
+- run `git reset --soft <commit_hash>` to reset the project back to that specific commit. the soft reset will keep changes after that commit to the staged area.
+- make some changes to the staged files and make a new commit. Now we have two commits.
+- run `git reset --hard HEAD~1` to reset the project back to the old commit again. This time all changes after the commit will be lost.
+- if we want to come back to the latest commit (and can't see the commit hash), we need to run `git reflog`. This will show all the HEAD movements history with the commit hashes. Now we can run `git reset --hard <commit_hash>` to restore back to the latest commit.
+
 ## Undoing Staged Changes
 
 To unstage changes that have been added to the staging area, you have several options. The most common way is to use `git reset filename` to unstage a specific file, or `git reset .` to unstage all files. Alternatively, you can use the newer `git restore --staged filename` command to unstage a specific file, or `git restore --staged .` to unstage all files. Both methods will move the changes from the staging area back to the working directory. If you want to completely discard the staged changes, first unstage them using one of the above commands, then use either `git checkout -- filename` or `git restore filename` to discard changes in a specific file, or `git checkout .` or `git restore .` to discard all changes in the working directory.
