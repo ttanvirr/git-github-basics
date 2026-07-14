@@ -559,6 +559,13 @@ Think of `git log` as your official commit history, while `git reflog` is like a
 - create 'bugfix/bugfix-01.txt' and commit changes. this will associated with branch 'bugfix'.
 - finally merge main and bugfix branches.
 
+**practice reflog**
+
+- continue with the previous project.
+- while in the main branch, run `git reflog`.
+- This will show all the HEAD movements history with hashe ids.
+- In the 'Git Reset' section we'll practice some practical scenarios.
+
 ## Git Reset
 
 Git reset is a powerful command that allows you to undo changes in your Git repository. It can be used to unstage files, discard changes, or even remove commits from your history.We will only cover the most common use cases of `git reset` here, since I don't want to overwhelm you with too much information at once. The most common use cases are:
