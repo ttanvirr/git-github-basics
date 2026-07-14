@@ -696,6 +696,57 @@ A merge conflict occurs when Git cannot automatically resolve differences betwee
 
 5. **Binary File Conflict**: Happens when two branches modify a binary file differently, and Git cannot automatically merge the changes.
 
+#### practice merge conflicts
+
+- create a new project directory 'merge-conflicts'
+- create app.js with content "console.log("App is running on main")"
+- create hello.js with content "console.log("hello from main")"
+- commit changes with message "create two files app and hello"
+- create and switch to a new branch 'payment'.
+- edit app.js content as "console.log("App is running on payment")"
+- edit hello.js content as:
+
+```js
+console.log("hello from main")
+console.log("hello from payment")
+```
+
+- commit changes with message "create payment"
+- switch to main branch and create and switch to a new branch 'feature'
+- edit the app.js content as "console.log("App is running on feature-1")"
+- edit the hello.js content as:
+
+```js
+console.log("hello from main")
+console.log("hello from feature-1")
+```
+
+- commit with message "create feature-1"
+- again edit app.js as "console.log("App is running on feature-2")"
+- edit the hello.js content as:
+
+```js
+console.log("hello from main")
+console.log("hello from feature-1")
+console.log("hello from feature-2")
+```
+
+- commit changes with message "create feature-2"
+- switch to main branch and create and switch to a new branch 'bugfix'
+- edit the app.js content as "console.log("App is running on bugfix-1")"
+- edit the hello.js content as:
+
+```js
+console.log("hello from main")
+console.log("hello from bugfix-1")
+```
+
+- commit with message "create bugfix-1"
+- repeat the steps for bugfix-2, bugfix-3 and bugfix-4
+- switch to payment branch and merge with main (and then vice versa). we won't face any conflicts during this merge.
+- now switch to feature brance and try to merge with main (use commands instead of gui). you'll face conflicts. resolve the conflicts, stage changes and commit with gui (press `continue` button).
+- now switch to main and merge with feature. this time merge will be done with 'Fast-forward' and no conflicts.
+
 ## 🔄 Git Rebase vs Git Merge (Behind the Scenes)
 
 **👉 `git rebase main` (from `feature-branch`)**
