@@ -1,1 +1,1 @@
-console.log("App is running on main")
+console.log("App is running on payment")
