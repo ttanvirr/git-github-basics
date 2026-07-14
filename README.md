@@ -545,6 +545,8 @@ Think of `git log` as your official commit history, while `git reflog` is like a
 - repeat step for feature-02.txt.
 - run `git log --oneline` to see the `HEAD` position. It is now pointing to the `feature` branch's latest commit.
 - switch to the main branch and repeat steps for 'main-03.txt'.
+- switch to feature branch and merge `feature` with `main`.
+- check the HEAD position.
 
 ## Git Reset
 
