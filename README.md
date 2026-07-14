@@ -792,6 +792,17 @@ To cherry-pick multiple commits, you can specify a range of commits using the `.
 
 #### practice cherry-pick
 
+- create a new project folder 'cherry-pick'
+- create main-01.txt and commit.
+- create two new branches 'feature' and 'feature-test'
+- switch to feature.
+- create 'feature-01.txt' and commit.
+- switch to feature-test branch.
+- create two commits here.
+- now see the git logs for commit hashes in feature-test branch.
+- suppose you want to only merge one specific comit of feature-test branch into feature branch. copy that comit hash.
+- switch to feature branch and run `git cherry-pick <commit_hash>`. now only that commit will be merged into this feature branch.
+
 ## 🧠 Git Challenge: Conflicts, Rebase, Squash & Cherry-Pick
 
 - Create a new folder called `git-merge-rebase-practice`
