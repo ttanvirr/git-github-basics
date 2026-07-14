@@ -550,6 +550,12 @@ Think of `git log` as your official commit history, while `git reflog` is like a
 - switch to main branch and merge `main` with `feature`.
 - again check the HEAD position. now the HEAD should be pointing to both main and feature branch on the latest commit.
 
+#### practice detached HEAD
+
+- continue with the previous project.
+- checkout to an old commit (run `git checkout <commit_hash>`). now we are in detached HEAD mode. now if we change anything to the project it won't be associated with any branch.
+- Solution:
+
 ## Git Reset
 
 Git reset is a powerful command that allows you to undo changes in your Git repository. It can be used to unstage files, discard changes, or even remove commits from your history.We will only cover the most common use cases of `git reset` here, since I don't want to overwhelm you with too much information at once. The most common use cases are:
