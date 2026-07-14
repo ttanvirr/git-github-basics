@@ -534,7 +534,7 @@ The key differences between `git reflog` and `git log` are:
 
 Think of `git log` as your official commit history, while `git reflog` is like a detailed activity log that records every movement of HEAD, making it particularly useful for recovering lost commits or branches after operations like hard resets or branch deletions.
 
-#### practice
+#### practice HEAD
 
 - create a project folder 'head-reflog'
 - create main-01.txt. put content and commit changes.
@@ -548,7 +548,7 @@ Think of `git log` as your official commit history, while `git reflog` is like a
 - switch to feature branch and merge `feature` with `main`.
 - check the HEAD position (pointing to feature branch with the merge-commit).
 - switch to main branch and merge `main` with `feature`.
-- again check the HEAD position.
+- again check the HEAD position. now the HEAD should be pointing to both main and feature branch on the latest commit.
 
 ## Git Reset
 
