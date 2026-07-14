@@ -1,1 +1,1 @@
-console.log("App is running on feature-2")
+console.log("App is running on bugfix-2")
