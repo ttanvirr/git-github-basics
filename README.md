@@ -775,9 +775,13 @@ When you rebase a branch onto another branch, Git tries to apply the commits fro
 
 ## Squash Commits Merge and Rebase
 
-**`git merge --squash feature`**
+- cleaner commit history.
+- combine commits into one.
 
-**`git rebase -i HEAD~n`**
+**`git merge --squash feature`** - for combining commits during merge.
+
+**`git rebase -i HEAD~n`** - combine commits during rebase
+
 The `git rebase -i HEAD~n` command allows you to interactively rebase the last n commits. This means you can choose which commits to keep, edit, squash (combine), or drop (remove) during the rebase process. The interactive rebase opens an editor where you can modify the commit history as needed.
 
 ## Cherry-Pick
@@ -785,6 +789,8 @@ The `git rebase -i HEAD~n` command allows you to interactively rebase the last n
 cherry-pick is a Git command that allows you to apply the changes introduced by a specific commit from one branch to another. This is useful when you want to incorporate a particular change without merging the entire branch. Cherry-picking creates a new commit in the target branch with the same changes as the original commit, but it does not affect the commit history of the source branch.
 To cherry-pick a commit, you need to know its commit hash. You can find the commit hash by running `git log` or `git log --oneline`. Once you have the hash, switch to the target branch where you want to apply the changes and run `git cherry-pick <commit-hash>`. This will create a new commit in the target branch with the changes from the specified commit.
 To cherry-pick multiple commits, you can specify a range of commits using the `..` notation, like `git cherry-pick <start-commit>..<end-commit>`. This will apply all commits in that range to the current branch. If there are conflicts during the cherry-pick process, Git will pause and allow you to resolve them before continuing.
+
+#### practice cherry-pick
 
 ## 🧠 Git Challenge: Conflicts, Rebase, Squash & Cherry-Pick
 
