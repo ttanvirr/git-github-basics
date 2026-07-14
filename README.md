@@ -747,6 +747,8 @@ console.log("hello from bugfix-1")
 - now switch to feature brance and try to merge with main (use commands instead of gui). you'll face conflicts. resolve the conflicts, stage changes and commit with gui (press `continue` button).
 - now switch to main and merge with feature. this time merge will be done with 'Fast-forward' and no conflicts.
 
+- now switch to bugfix branch.
+
 ## 🔄 Git Rebase vs Git Merge (Behind the Scenes)
 
 **👉 `git rebase main` (from `feature-branch`)**
