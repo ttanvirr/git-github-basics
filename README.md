@@ -534,6 +534,18 @@ The key differences between `git reflog` and `git log` are:
 
 Think of `git log` as your official commit history, while `git reflog` is like a detailed activity log that records every movement of HEAD, making it particularly useful for recovering lost commits or branches after operations like hard resets or branch deletions.
 
+#### practice
+
+- create a project folder 'head-reflog'
+- create main-01.txt. put content and commit changes.
+- run `git log --oneline` to see the `HEAD` position. It is pointing to the main branch's latest commit.
+- repeat step for 'main-02.txt'.
+- create and switch to a new branch 'feature'.
+- create feature/feature-01.txt. put content and commit changes.
+- repeat step for feature-02.txt.
+- run `git log --oneline` to see the `HEAD` position. It is now pointing to the `feature` branch's latest commit.
+- switch to the main branch and repeat steps for 'main-03.txt'.
+
 ## Git Reset
 
 Git reset is a powerful command that allows you to undo changes in your Git repository. It can be used to unstage files, discard changes, or even remove commits from your history.We will only cover the most common use cases of `git reset` here, since I don't want to overwhelm you with too much information at once. The most common use cases are:
