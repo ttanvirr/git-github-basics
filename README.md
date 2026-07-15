@@ -954,14 +954,22 @@ A Pull Request (PR) is like a formal request to merge your changes into someone 
 
 Think of it like submitting a draft for review before it gets published in a book. The maintainers can review your work, request changes, or accept it as is.
 
-- clone any of the repositories
-- create a branch
+- create a temporary local project and push it to github. then delete the local one.
+- clone the github repo into local machine again.
+- create a branch (`TICKET-11`)
 - add some changes
-- push it up to Github
+- merge main into TICKET-11. (skip merging TICKET-11 into main locally).
+- push it up to Github using `git push -u origin TICKET-11`
+- go to github repo and press on `Compare & pull request`
+- select and click on `draft pull request` for now.
+- before making `Ready for review`, make some more changes and push again.
+- new commits will be automatically added to the previous pull request.
+- press `Ready for review` button and review changes.
+- usually select `Merge pull request` or `Squash and merge` and press. Squash combines commit messages.
 
 ## Challenge - Second PR with `TICKET-22` Branch
 
-- checkout branch `TICKET-22`
+- checkout to a new branch `TICKET-22`
 - create file ticket-22.txt with some text
 - add "hello people" to main-01.txt
 - change text to "hello from ticket-22" in `hello.js`
