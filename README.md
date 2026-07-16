@@ -978,7 +978,7 @@ Think of it like submitting a draft for review before it gets published in a boo
 - add text to "app is running..." in app.js
 - make a second commit "TICKET-22 change text in app.js"
 - merge `main` into `TICKET-22`
-- hmm. strange it's up to date ⚠️
+- hmm. strange it's up to date ⚠️ (because local main is not latest like the remote main)
 - push the changes up to Github
 - see if you can merge `TICKET-22` into `main` ⚠️
 - don't force it, keep watching and I will provide solution ⚠️
@@ -1065,8 +1065,9 @@ When you run `git push -u origin payment` but don't have a local branch named `p
   - Create a branch named `TICKET-11`.
   - Modify `app.js` by changing the console message.
   - Commit the change with a short message.
+  - run `git pull` in main to check everything is up to date with remote main.
   - Fetch and merge the latest `main` into `TICKET-11`.
-  - Push the branch to GitHub.
+  - Push the branch to GitHub (`git push -u origin TICKET-11`)
   - Create a pull request and merge `TICKET-11` into `main` using the **merge** strategy.
 
 - In the `dev2` folder:
