@@ -10,3 +10,9 @@
 ```bash
 git rm --cached <file_path/name>
 ```
+
+3. In VS Code, you'll see:
+- `<file_name>` staged as deleted (from Git's perspective)
+- `.gitignore` modified
+
+You must commit both changes together. Done.
